@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+
+body {
+    background: #faa5d4 ;
+	color: rgb(255, 255, 255);
+    font-family: 'Marck Script', cursive;
+  }
+
+.content {
+    grid-area: content;
+    background:url('images/bunga.jpg')
+  }
+
+.sidebar{
+    grid-area: sidebar;
+    background: linear-gradient(to right, rgb(245, 65, 155), rgb(253, 145, 235),
+     rgb(215, 118, 253)) ;
+    justify-content: center;
+    } 
+
+.container {
+    font-size: 1em;
+    width: 100%;
+    height: 100;
+    height: 70vh;
+    display: grid;
+    grid-template-areas: "sidebar" "content" "footer";
+    grid-template-columns: 1.5fr;
+    grid-template-rows: 130px 800px 250px;
+  }
+  
+.content, .sidebar, .footer{
+    padding: 1em;
+  }
+  
+nav ul {
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center; 
+  }
+  
+nav li{
+    list-style: none;
+    padding: 0.5em 0;
+  }
+  
+nav li a {
+    color: rgb(91, 5, 117);
+    font-weight: 700;
+    opacity: 0.6;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+nav li a:hover {
+    opacity: 1;
+  }
+
+.hero {
+    max-width: 100 px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+.hero img {
+    width: 200px;
+    float: left;
+    border: 8px solid #ff0bc2;
+    margin: 20px;
+  }
+  
+.hero h4 {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #030303;
+    text-align: left;
+  }
+  
+.hero p {
+    font-weight: 300;
+    line-height: 1.3em;
+    color: #000000;
+  }
+  
+.action-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size:x-large;
+    font-weight: 700;
+    background: #ff75e8;
+    padding: 1em 3em;
+    border-radius: 100px;
+    margin: 1em 2em;
+    transition: 0.3s;  
+  }
+ 
+.pad {  
+    padding: 30px;
+    font-size: 20px;
+}      
+
+@media (min-width: 1040px){
+.container {
+        grid-template-areas:"sidebar content";
+        grid-template-rows: 1fr auto ;
+        grid-template-columns: 300px 1f;
+    }
+  
+nav ul{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }  
+
+footer{
+        background-color: rgb(236, 65, 231);
+        text-align: center;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }   
+.button {
+        background-color: #ee06e2; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+    
+.input{
+        padding:8px;
+        display:block;
+        border:none;
+        border-bottom:1px solid #ccc;
+        width:100%
+} 
+} 
