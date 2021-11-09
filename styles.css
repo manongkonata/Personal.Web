@@ -11,8 +11,11 @@ body {
 
 .content {
     grid-area: content;
-    background:url('images/bunga.jpg')
-  }
+    background:url('images/bunga.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    position: relative; padding: 20px;
+}
 
 .sidebar{
     grid-area: sidebar;
