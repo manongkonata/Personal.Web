@@ -11,7 +11,7 @@ body {
     background:url('images/bunga.jpg');
     background-attachment: fixed;
     background-position: center;
-    position: relative; padding: 20px;
+    position: relative; padding: 10px;
 }
 
 .sidebar{
@@ -24,7 +24,7 @@ body {
 .container {
     font-size: 1em;
     width: 100%;
-    height: 70vh;
+    height: 60vh;
     display: grid;
     grid-template-areas: "sidebar" "content" "footer";
     grid-template-columns: 1.5fr;
@@ -73,8 +73,8 @@ nav li a:hover {
   }
   
 .hero h4 {
-    font-size: 1.5em;
-    font-weight: 500;
+    font-size: 1.2em;
+    font-weight: 300;
     color: #030303;
     text-align: left;
   }
@@ -99,20 +99,18 @@ nav li a:hover {
   }
  
 .pad {  
-    padding: 30px;
+  margin: 5em 1em;
+    padding: 1em;
     font-size: 20px;
 }      
 
-@media (min-width: 900px){
+@media (min-width: 1040px){
 .container {
-    display: block;
-}
-    
-.sidebar{
-    background: linear-gradient(to right, rgb(245, 65, 155), rgb(253, 145, 235),
-    rgb(215, 118, 253)) ;
-      display: block;
-    }
+        grid-template-areas:"sidebar content" "footer content";
+        grid-template-rows: 1fr auto ;
+        grid-template-columns: 300px 1f;
+} 
+
 
 nav ul{  
         justify-content: space-between;
@@ -125,6 +123,7 @@ footer{
         padding-bottom: 10px;
         padding-top: 10px;
     }   
+    
 .button {
         background-color: #ee06e2; /* Green */
         border: none;
