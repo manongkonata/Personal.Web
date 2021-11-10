@@ -1,9 +1,6 @@
-*{
+body {
     margin: 0;
     padding: 0;
-    }
-
-body {
     background: #faa5d4 ;
 	color: rgb(255, 255, 255);
     font-family: 'Marck Script', cursive;
@@ -27,7 +24,6 @@ body {
 .container {
     font-size: 1em;
     width: 100%;
-    height: 100;
     height: 70vh;
     display: grid;
     grid-template-areas: "sidebar" "content" "footer";
@@ -65,7 +61,6 @@ nav li a:hover {
   }
 
 .hero {
-    max-width: 100 px;
     margin: 0 auto;
     text-align: left;
   }
@@ -108,18 +103,21 @@ nav li a:hover {
     font-size: 20px;
 }      
 
-@media (min-width: 1040px){
+@media (min-width: 900px){
 .container {
-        grid-template-areas:"sidebar content";
-        grid-template-rows: 1fr auto ;
-        grid-template-columns: 300px 1f;
+    display: block;
+}
+    
+.sidebar{
+    background: linear-gradient(to right, rgb(245, 65, 155), rgb(253, 145, 235),
+    rgb(215, 118, 253)) ;
+      display: block;
     }
-  
-nav ul{
-        display: flex;
+
+nav ul{  
         justify-content: space-between;
         flex-direction: column;
-    }  
+    } 
 
 footer{
         background-color: rgb(236, 65, 231);
